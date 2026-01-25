@@ -16,7 +16,7 @@ function App() {
                     WebkitTextFillColor: 'transparent',
                     marginBottom: '0.5rem'
                 }}>
-                    Torque Specs
+                    9M2PJU Bolts and Nuts Torque Specs Chart
                 </h1>
                 <p style={{ color: 'var(--color-text-secondary)' }}>
                     Professional Mechanic's Reference & Calculator
@@ -64,7 +64,9 @@ function App() {
 
             <footer style={{ marginTop: '3rem', textAlign: 'center', color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>
                 <p>Use at your own risk. Always verify with official manufacturer specifications.</p>
-                <p style={{ marginTop: '0.5rem' }}>&copy; {new Date().getFullYear()} Torque Specs App</p>
+                <p style={{ marginTop: '0.5rem' }}>
+                    Made with ❤️ by <a href="https://hamradio.my" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-accent)', textDecoration: 'none' }}>9M2PJU</a>
+                </p>
             </footer>
         </div>
     )

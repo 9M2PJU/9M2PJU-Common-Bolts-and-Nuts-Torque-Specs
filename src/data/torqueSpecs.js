@@ -1,5 +1,6 @@
 export const torqueSpecs = [
     // Metric Coarse - Grade 8.8
+    { system: 'Metric', size: 'M5', pitch: '0.8', grade: '8.8', torqueNm: 6, torqueFtLbs: 4.4, socket: '8mm' },
     { system: 'Metric', size: 'M6', pitch: '1.0', grade: '8.8', torqueNm: 10.5, torqueFtLbs: 7.7, socket: '10mm' },
     { system: 'Metric', size: 'M8', pitch: '1.25', grade: '8.8', torqueNm: 25, torqueFtLbs: 18, socket: '13mm' },
     { system: 'Metric', size: 'M10', pitch: '1.5', grade: '8.8', torqueNm: 49, torqueFtLbs: 36, socket: '17mm' },
@@ -10,6 +11,7 @@ export const torqueSpecs = [
     { system: 'Metric', size: 'M20', pitch: '2.5', grade: '8.8', torqueNm: 410, torqueFtLbs: 302, socket: '30mm' },
 
     // Metric Coarse - Grade 10.9
+    { system: 'Metric', size: 'M5', pitch: '0.8', grade: '10.9', torqueNm: 8.5, torqueFtLbs: 6.3, socket: '8mm' },
     { system: 'Metric', size: 'M6', pitch: '1.0', grade: '10.9', torqueNm: 15, torqueFtLbs: 11, socket: '10mm' },
     { system: 'Metric', size: 'M8', pitch: '1.25', grade: '10.9', torqueNm: 36, torqueFtLbs: 27, socket: '13mm' },
     { system: 'Metric', size: 'M10', pitch: '1.5', grade: '10.9', torqueNm: 72, torqueFtLbs: 53, socket: '17mm' },

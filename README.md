@@ -1,4 +1,4 @@
-# Bolts and Nuts Torque Specs Web App
+# 9M2PJU Bolts and Nuts Torque Specs Chart
 
 A modern, responsive web application for mechanics to check torque specifications and convert units. Built with **Vite + React**.
 
