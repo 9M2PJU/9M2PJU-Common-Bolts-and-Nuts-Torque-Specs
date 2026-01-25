@@ -74,8 +74,8 @@ const TorqueChart = () => {
                                     <td style={{ fontWeight: '600', color: 'var(--color-accent)' }}>{spec.size}</td>
                                     <td>{spec.pitch}</td>
                                     <td>{spec.grade}</td>
-                                    <td>{spec.torqueNm}</td>
-                                    <td>{spec.torqueFtLbs}</td>
+                                    <td>{spec.minNm} - {spec.maxNm}</td>
+                                    <td>{spec.minFtLbs} - {spec.maxFtLbs}</td>
                                     <td>{spec.socket}</td>
                                 </tr>
                             ))
@@ -90,7 +90,7 @@ const TorqueChart = () => {
                 </table>
             </div>
             <p style={{ marginTop: '1rem', fontSize: '0.8rem', color: 'var(--color-text-secondary)', fontStyle: 'italic' }}>
-                * Values are dry torque specifications for standard zinc-plated fasteners. Lubricated threads require less torque (~20-30% less).
+                * Values represent estimated dry torque ranges. Always verify with specific manufacturer recommendations.
             </p>
         </div>
     );
