@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Table, Calculator } from 'lucide-react'
 import './index.css'
 import TorqueChart from './components/TorqueChart'
 import TorqueCalculator from './components/TorqueCalculator'
@@ -7,7 +8,7 @@ function App() {
     const [activeTab, setActiveTab] = useState('chart')
 
     return (
-        <div className="container" style={{ padding: '2rem 1rem' }}>
+        <div className="container" style={{ padding: '2rem 1rem', paddingBottom: 'calc(80px + env(safe-area-inset-bottom))' }}>
             <header style={{ marginBottom: '2rem', textAlign: 'center' }}>
                 <h1 style={{
                     fontSize: '2.5rem',
@@ -16,26 +17,28 @@ function App() {
                     WebkitTextFillColor: 'transparent',
                     marginBottom: '0.5rem'
                 }}>
-                    9M2PJU Bolts and Nuts Torque Specs Chart
+                    9M2PJU Torque Specs
                 </h1>
                 <p style={{ color: 'var(--color-text-secondary)' }}>
-                    Professional Mechanic's Reference & Calculator
+                    Professional Mechanic's Reference
                 </p>
             </header>
 
             <div className="glass-panel" style={{ padding: '1rem', minHeight: '60vh' }}>
-                <nav className="tabs">
+                <nav className="tabs mobile-nav">
                     <button
                         className={`tab-btn ${activeTab === 'chart' ? 'active' : ''}`}
                         onClick={() => setActiveTab('chart')}
                     >
-                        Chart Reference
+                        <Table size={20} />
+                        <span>Chart</span>
                     </button>
                     <button
                         className={`tab-btn ${activeTab === 'calc' ? 'active' : ''}`}
                         onClick={() => setActiveTab('calc')}
                     >
-                        Unit Calculator
+                        <Calculator size={20} />
+                        <span>Calculator</span>
                     </button>
                 </nav>
 
