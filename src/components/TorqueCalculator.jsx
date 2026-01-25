@@ -87,20 +87,9 @@ const TorqueCalculator = () => {
                 </div>
             </div>
 
-            <div style={{
-                background: 'rgba(56, 189, 248, 0.1)',
-                padding: '2rem',
-                borderRadius: 'var(--radius-lg)',
-                textAlign: 'center',
-                border: '1px solid rgba(56, 189, 248, 0.2)'
-            }}>
+            <div className="calc-result-box">
                 <div style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)', marginBottom: '0.5rem' }}>Result</div>
-                <div style={{
-                    fontSize: '3rem',
-                    fontWeight: '700',
-                    color: 'var(--color-accent)',
-                    fontVariantNumeric: 'tabular-nums'
-                }}>
+                <div className="calc-result-value">
                     {result !== null ? result.toFixed(2) : '---'}
                 </div>
                 <div style={{ fontSize: '1.2rem', color: 'var(--color-text-primary)', marginTop: '0.5rem' }}>
