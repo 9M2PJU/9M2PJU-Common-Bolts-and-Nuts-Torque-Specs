@@ -46,64 +46,40 @@ const TorqueCalculator = () => {
 
     return (
         <div style={{ maxWidth: '600px', margin: '0 auto' }}>
-            <div style={{ display: 'grid', gap: '1.5rem', marginBottom: '2rem' }}>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+            <div className="calc-grid">
+                <div className="calc-input-group">
                     <label style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>Value</label>
                     <input
                         type="number"
                         value={amount}
                         onChange={(e) => setAmount(e.target.value)}
                         placeholder="Enter value..."
-                        style={{
-                            padding: '1rem',
-                            borderRadius: '0.5rem',
-                            border: '1px solid var(--color-border)',
-                            background: 'rgba(0, 0, 0, 0.2)',
-                            color: 'var(--color-text-primary)',
-                            fontSize: '1.2rem',
-                            width: '100%'
-                        }}
+                        className="calc-input"
                     />
                 </div>
 
-                <div style={{ display: 'flex', gap: '1rem' }}>
-                    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                <div className="calc-row">
+                    <div className="calc-input-group">
                         <label style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>From</label>
                         <select
                             value={fromUnit}
                             onChange={(e) => setFromUnit(e.target.value)}
-                            style={{
-                                padding: '0.8rem',
-                                borderRadius: '0.5rem',
-                                border: '1px solid var(--color-border)',
-                                background: 'var(--color-bg-card)',
-                                color: 'var(--color-text-primary)',
-                                fontSize: '1rem',
-                                width: '100%'
-                            }}
+                            className="calc-select"
                         >
                             {units.map(u => <option key={u.value} value={u.value}>{u.label}</option>)}
                         </select>
                     </div>
 
-                    <div style={{ display: 'flex', alignItems: 'center', paddingTop: '1.5rem' }}>
+                    <div className="calc-arrow">
                         <span style={{ fontSize: '1.5rem', color: 'var(--color-accent)' }}>→</span>
                     </div>
 
-                    <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                    <div className="calc-input-group">
                         <label style={{ fontSize: '0.9rem', color: 'var(--color-text-secondary)' }}>To</label>
                         <select
                             value={toUnit}
                             onChange={(e) => setToUnit(e.target.value)}
-                            style={{
-                                padding: '0.8rem',
-                                borderRadius: '0.5rem',
-                                border: '1px solid var(--color-border)',
-                                background: 'var(--color-bg-card)',
-                                color: 'var(--color-text-primary)',
-                                fontSize: '1rem',
-                                width: '100%'
-                            }}
+                            className="calc-select"
                         >
                             {units.map(u => <option key={u.value} value={u.value}>{u.label}</option>)}
                         </select>
