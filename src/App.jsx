@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import { Table, Calculator } from 'lucide-react'
+import { Table, Calculator, BookOpen } from 'lucide-react'
 import './index.css'
 import TorqueChart from './components/TorqueChart'
 import TorqueCalculator from './components/TorqueCalculator'
+import VehicleGuide from './components/VehicleGuide'
 
 function App() {
     const [activeTab, setActiveTab] = useState('chart')
@@ -34,11 +35,18 @@ function App() {
                         <span>Chart</span>
                     </button>
                     <button
+                        className={`tab-btn ${activeTab === 'guide' ? 'active' : ''}`}
+                        onClick={() => setActiveTab('guide')}
+                    >
+                        <BookOpen size={20} />
+                        <span>Guide</span>
+                    </button>
+                    <button
                         className={`tab-btn ${activeTab === 'calc' ? 'active' : ''}`}
                         onClick={() => setActiveTab('calc')}
                     >
                         <Calculator size={20} />
-                        <span>Calculator</span>
+                        <span>Calc</span>
                     </button>
                 </nav>
 
@@ -50,6 +58,16 @@ function App() {
                                 Search and filter common torque values.
                             </p>
                             <TorqueChart />
+                        </div>
+                    )}
+
+                    {activeTab === 'guide' && (
+                        <div className="content-fade-in">
+                            <h2>Vehicle Specific Guide</h2>
+                            <p style={{ color: 'var(--color-text-secondary)', marginBottom: '1rem' }}>
+                                Common ranges for specific components.
+                            </p>
+                            <VehicleGuide />
                         </div>
                     )}
 
