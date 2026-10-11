@@ -38,3 +38,9 @@ This project is configured for **GitHub Pages**.
 ## Customization
 - **Data**: Edit `src/data/torqueSpecs.js` to add more bolt sizes or grades.
 - **Styles**: Edit `src/index.css` to change the theme variables.
+
+## Support
+
+If you find this project useful, please consider supporting it:
+
+[![Donate with PayPal](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=9m2pju%40hamradio.my&currency_code=MYR&item_name=9M2PJU-Common-Bolts-and-Nuts-Torque-Specs)
